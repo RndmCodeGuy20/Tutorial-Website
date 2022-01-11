@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Tutorial | Hello World</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="theory">
+    <div class="theorycont">
+      <div class="sidebar">
+        <ul class="sidebar">
+          <li style="font-size: 13">&nbsp;</li>
+          <li></li>
+          <li><a class="sidebar" href="KYM.html">Know Your Machine</a></li>
+          <li>
+            <a class="sidebar" href="ComLang.html">Computer Language</a>
+          </li>
+          <li>
+            <a class="sidebar" href="Compiler.html">Compiler</a>
+          </li>
+          <li>
+            <a class="sidebar" href="HelloWorld.html"><b>Hello World</b></a>
+          </li>
+          <li>
+            <a class="sidebar" href="index.html">Back to Portal</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="left" style="position: relative; top: 110px">
+        <p>
+          <b style="font-size: 18px"><u>Programming : </u></b><br /><br />
+          The process of creation of an ordered set of instructions to solve a
+          problem with the use of a <a class="intext">Computer</a>. <br /><br />
+          <a class="intextNote">
+            &#x2622; The most important part is to perfectly and efficiently
+            &emsp; &emsp; arrange these instructions.</a
+          >
+        </p>
+        <p>
+          <b style="font-size: 18px"><u>Programming Fundamentals :</u></b
+          ><br /><br />
+          Computer programming (often shortened to programming) is a process
+          that leads from an original formulation of a computing problem to
+          executable computer programs. Simply put, it is the process of
+          designing and building an executable computer program to accomplish a
+          specific computing result or to perform a specific task. Programming
+          involves activities such as analysis, develop understanding,
+          generating algorithms, verifying requirements of algorithms including
+          their correctness and resource consumption, and finally implementation
+          of algorithms in a target programming language.
+        </p>
+        <p>
+          <b style="font-size: 18px"><u>Programming Languages :</u></b
+          ><br /><br />
+          A <a class="intext">programming language</a> is a formal language
+          comprising a set of strings that produce various kinds of machine code
+          output. Programming languages are one kind of computer language, and
+          are used in computer programming to implement algorithms.
+        </p>
+      </div>
+      <div class="right2" style="position: relative; top: 145px">
+        <img
+          class="theory"
+          title="Binary Illustration"
+          alt="Binary Illustration"
+          src="Assets/bin.jpg"
+        />
+      </div>
+      <hr class="theory" style="position: relative; top: 225px" />
+      <div class="left" style="position: relative; top: 340px">
+        <p>
+          <b style="font-size: 18px"><u>How to start programming :</u></b
+          ><br /><br />
+          There are multiple environments to write your code and execute it :-
+          <br /><br />
+          <b>1.</b> A <a class="intextAlt">Text Editor / IDE</a>, this is an
+          application that allows you to write your code in a text file. Text
+          Editors provide a rich set of features to write your code. Some of the
+          features are :- <br /><br />
+          - <a class="intextAlt2">Syntax Highlighting</a> : This feature
+          highlights the syntax of &ensp; your code. <br />
+          - <a class="intextAlt2">Auto-completion</a> : This feature
+          automatically completes &emsp;&nbsp;&nbsp; the code you are writing.
+          <br />
+          - <a class="intextAlt2">Auto-indentation</a> : This feature
+          automatically indents your &ensp; code. <br />
+          - <a class="intextAlt2">Auto Save</a> : This feature automatically
+          saves your code. <br />
+          - <a class="intextAlt2">Integrated Terminal</a> : This feature allows
+          you to run your &ensp;&nbsp;&nbsp; code in a terminal. <br /><br />
+          <b>2.</b> A <a class="intextAlt">Terminal</a>, this is an application
+          that allows you to run your code in a terminal. Command Line Interface
+          Editors (CLI Eds) like Vim, EMacs, Gedit, Nano ,etc. are examples of
+          CLI based Editors. They are used to simply write your code and execute
+          it, some of them support syntax highlighting. <br /><br />
+          <b>3.</b> A <a class="intextAlt">Web-based Text Editor</a>, this is an
+          application that allows you to run your code in a web browser on
+          specific web platforms like
+          <a href="https://codepen.io/" class="intext">Codepen</a>,
+          <a href="https://replit.com/" class="intext">Repl.it</a>. Web Browsers
+          like Chrome, Firefox and Safari are examples of web browsers. These
+          editors support linting (syntax highlighting), auto completion, auto
+          indentation, auto save and integrated terminal, and does not require
+          any installation. <br />&#x2622; Best for beginners. <br /><br />
+          You can use any of these environments to write your code and execute
+          it. But for the first few lectures, we will be using the
+          <a class="intextAlt">Web-based Text Editor</a> (<a
+            href="https://replit.com/"
+            class="intext"
+            >Repl.it</a
+          >).
+        </p>
+      </div>
+      <div class="right2" style="position: relative; top: 550px">
+        <canvas id="myChart"></canvas>
+        <!--<script>
+          const labels = [
+            "VS Code",
+            "Visual Studio",
+            "Notepad++",
+            "Sublime Text",
+            "Vim",
+            "IntelliJ",
+            "Android Studio",
+            "Eclipse",
+            "Atom",
+            "PyCharm",
+          ];
+
+          const data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "My First dataset",
+                backgroundColor: "#56b6c2",
+                borderColor: "#98c379",
+                data: [34, 33, 32, 28, 26, 25, 19, 18, 17, 13],
+              },
+            ],
+          };
+
+          const config = {
+            type: "bar",
+            data: data,
+            options: {},
+          };
+
+          const myChart = new Chart(document.getElementById("myChart"), config);
+        </script>-->
+      </div>
+      <hr class="theory" style="position: relative; top: 460px" />
+      <div class="left" style="position: relative; top: 575px">
+        <p>
+          <b style="font-size: 18px"><u>How to write code :</u></b
+          ><br /><br />
+          <b>1.</b> As we are using a web based code editor we will first be
+          redirecting ourselves to the site, in our case
+          <a href="https://replit.com/" class="intext">Repl.it</a>. <br /><br />
+          <b>2.</b> Sign / Log - in to the site and create a repl, select C
+          language in the templates drop down and give an appropriate name to
+          your project. <br /><br />
+          <b>3.</b> After creating a repl, you will be redirected to a window
+          with a file explorer tab, editor tab and a terminal tab. <br /><br />
+          <b>4.</b> We will be writing our code in the editor area and after
+          running our code the result will be visible in the terminal area.
+          <br /><br /><br />
+          &#x2622; Write this piece of code into the editor area :-
+          <br />
+        </p>
+
+        <div class="bgcol">
+          <tt class="dType">#include</tt><tt class="str"> &lt;stdio.h&gt;</tt
+          ><br />
+          <br />
+          <tt class="dType">int</tt> <tt class="function">main</tt
+          ><tt class="brac">(){</tt> <br />&emsp;<tt class="function">printf</tt
+          ><tt class="brac">(</tt><tt class="str">"Hello,World"</tt
+          ><tt class="brac">);</tt><br />&emsp;<tt class="dType">return </tt
+          ><tt class="val">0</tt><tt class="brac">;<br />}</tt>
+        </div>
+        <br /><br />
+
+        <input
+          id="runBtn"
+          style="
+            width: 100px;
+            position: relative;
+            top: -10px;
+            margin-left: 180px;
+            cursor: pointer;
+          "
+          class="btn"
+          type="submit"
+          value="Run"
+          name="btnSubmit"
+          title="Click to Run Program"
+        />
+        <br />
+        <br />
+        <input
+          id="resBtn"
+          style="
+            width: 100px;
+            position: relative;
+            top: -10px;
+            margin-left: 180px;
+            cursor: pointer;
+          "
+          class="btn"
+          type="submit"
+          value="Clear"
+          name="btnSubmit"
+          title="Click to Reset Output"
+        />
+
+        <p style="font-weight: bold">Expected Output :</p>
+
+        <div class="bgcol" style="display: block">
+          <tt class="val">F:\RndmCodeGuy>_</tt
+          ><tt class="brac" id="out" style="display: none"> Hello, World!</tt>
+        </div>
+
+        <script>
+          const targetDiv = document.getElementById("out");
+          const btn = document.getElementById("runBtn");
+          btn.onclick = function () {
+            if (targetDiv.style.display === "none") {
+              targetDiv.style.display = "inline";
+            }
+          };
+
+          const resbtn = document.getElementById("resBtn");
+
+          resbtn.onclick = function () {
+            if (targetDiv.style.display === "inline") {
+              targetDiv.style.display = "none";
+            }
+          };
+        </script>
+      </div>
+      <div class="right2" style="position: relative; top: 650px">
+        <img
+          class="theory"
+          title="Replit"
+          alt="Replit landing page"
+          src="Assets/Replit Welcome.jpg"
+          width="400px"
+        />
+        <p style="text-align: center; text-decoration: underline">
+          <b>Fig : </b>Replit welcome page
+        </p>
+        <img
+          class="theory"
+          title="Replit"
+          alt="Create Repl button"
+          src="Assets/Replit create.jpg"
+          width="400px"
+          height="300px"
+        />
+        <p style="text-align: center; text-decoration: underline">
+          <b>Fig : </b>Replit After sign in page
+        </p>
+        <img
+          class="theory"
+          title="Replit"
+          alt="Replit Select Language"
+          src="Assets/Replit lang.jpg"
+          width="400px"
+          height="300px"
+        />
+        <p style="text-align: center; text-decoration: underline">
+          <b>Fig : </b>Select language from the dropdown
+        </p>
+        <img
+          class="theory"
+          title="Replit"
+          alt="Replit Select Language"
+          src="Assets/Replit code.jpg"
+          width="400px"
+          height="300px"
+        />
+        <p style="text-align: center; text-decoration: underline">
+          <b>Fig : </b> Editor Window
+        </p>
+      </div>
+      <hr class="theory" style="position: relative; top: 683px" />
+      <div class="left" style="position: relative; top: 830px">
+        <p>
+          <b style="font-size: 18px"><u>Understanding the Code :</u></b
+          ><br /><br />
+
+          <b>-</b> The first line of the code is the
+          <tt class="wobg"
+            ><tt class="dType"> #include</tt>
+            <tt class="str">&lt;stdio.h&gt;</tt></tt
+          >. This is a pre-processor directive. It is used to include the header
+          file <tt class="wobg"><tt class="str">&lt;stdio.h&gt;</tt></tt> which
+          stands for standard Input-Output header file (I/O). Basic I/O commands
+          like
+          <tt class="wobg"
+            ><tt class="function">printf</tt><tt class="brac">();</tt></tt
+          >
+          and
+          <tt class="wobg"
+            ><tt class="function">scanf</tt><tt class="brac">();</tt></tt
+          >
+          are defined in this header file.<br /><br />
+          <a class="intextNote">
+            &#x2622; C/C++ is a <u>case-sensitive</u> language. So,
+            <tt class="wobg"
+              ><tt class="function">printf</tt><tt class="brac">();</tt></tt
+            >
+            is not the same as
+            <tt class="wobg"
+              ><tt class="function">Printf</tt><tt class="brac">();</tt></tt
+            >. Also, it is not the same as
+            <tt class="wobg"
+              ><tt class="function">PRINTF</tt><tt class="brac">();</tt></tt
+            >.</a
+          >
+          <br /><br />
+          <b>-</b> The second line of the code is the
+          <tt class="wobg"
+            ><tt class="dType">int </tt><tt class="function">main</tt
+            ><tt class="brac">();</tt></tt
+          >. This is the
+          <tt class="wobg"
+            ><tt class="function">main</tt><tt class="brac">();</tt></tt
+          >
+          function, it is the function that is executed first when the program
+          execution starts. This is the starting point of any C/C++ program.
+          <br /><br /><b>-</b> These parentheses
+          <tt class="wobg"><tt class="brac">{}</tt></tt> are the start and end
+          of the code block, the code to be executed is written inside these
+          parenthesis. <br /><br />
+          <b>-</b> The fourth line is the
+          <tt class="wobg"
+            ><tt class="function">printf</tt><tt class="brac">(</tt
+            ><tt class="str">"Hello,World"</tt><tt class="brac">);</tt></tt
+          >. This is the
+          <tt class="wobg"
+            ><tt class="function">printf</tt><tt class="brac">();</tt></tt
+          >
+          function, it is used to print the string
+          <tt class="wobg"><tt class="str">"Hello, World!"</tt></tt> in the
+          output area.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

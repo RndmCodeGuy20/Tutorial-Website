@@ -1,3 +1,9 @@
+<!-- ---
+marp: true
+author: Shantanu Mane
+size: 4.3
+--- -->
+
 # About C :-
 
 ---
@@ -11,8 +17,6 @@ C is popular due to its many desirable qualities. The rich set of built-in funct
 > Fun Fact : Apollo 11 had a RAM of 512KB and the **Apollo Guidance Computer (AGC)** was programmed using C.
 
 The C compiler combines the capabilities of an assembly language with the features of a high-level language and therefore it is well suited for writing both system software and business packages. In fact, many of the C compilers available in the market are written in C.
-
-
 
 Due to the availability of variety of data types and powerful operators, C is fast and efficient. There are only 32 keywords in ANSI C and its strength lies within its built in functions.
 
@@ -33,7 +37,7 @@ C language supports structured programming, this means that a problem can be sol
 create full table in HTML
 
 | `auto` | `double` |
-|:------:| -------- |
+| :----: | -------- |
 
 ```c
 #include <stdio.h>
@@ -59,11 +63,3 @@ C is a function oriented language, that means we write programs through function
 C provides some built in functions, we can also create functions which are called user-defined functions.
 
 `main()` is one of the built in functions in C, it is the most important function in C and program execution starts through this program.
-
-
-
-
-
-
-
-

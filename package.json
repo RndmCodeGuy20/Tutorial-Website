@@ -1,0 +1,15 @@
+{
+  "name": "c-tutorial-website",
+  "version": "1.0.0",
+  "description": "Tutorial website for C.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "RndmCodeGuy20",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

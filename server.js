@@ -12,8 +12,24 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/Fundamentals", function (req, res) {
+app.get("/index.html", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
+
+app.get("/Fundamentals/KYM.html", function (req, res) {
   res.sendFile(__dirname + "/Fundamentals/KYM.html");
+});
+
+app.get("/Fundamentals/ComputerLang.html", function (req, res) {
+  res.sendFile(__dirname + "/Fundamentals/ComputerLang.html");
+});
+
+app.get("/Fundamentals/Compiler.html", function (req, res) {
+  res.sendFile(__dirname + "/Fundamentals/Compiler.html");
+});
+
+app.get("/Fundamentals/HelloWorld.html", function (req, res) {
+  res.sendFile(__dirname + "/Fundamentals/HelloWorld.html");
 });
 
 app.listen(3000, function () {

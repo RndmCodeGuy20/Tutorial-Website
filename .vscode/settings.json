@@ -1,7 +1,10 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Tutorial Website",
-    "svg.preview.background": "editor",
-    "cSpell.words": [
-        "Basile"
-    ]
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
